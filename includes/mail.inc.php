@@ -5,9 +5,10 @@ if(isset($_POST['submit'])){
 	$mailFrom = $_POST['email'];
 	$message = $_POST['message'];
 
+	$subject="contact form received";
 	$mailTo='xxyhcmxf@gmail.com';
 	$headers="From: ".$mailFrom;
-	$txt = "You have received contact request from ".$name.".\n\nThe E-mail is ".$mailFrom."\n\n".$message."\n\nThe Website is: ".$website;
+	$txt = "You have received contact request from ".$name.".\n\nThe E-mail is ".$mailFrom."\n\n".$message;
 
 	mail($mailTo, $subject, $txt, $headers);
 	header("Location: ../index.html?mailsend");
