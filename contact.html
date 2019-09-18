@@ -1,40 +1,100 @@
-<!DOCTYPE HTML>
-<html>
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Group 7 Client Website</title>
+	<link rel="stylesheet" href="bootstrap-4.1.3-dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="./styles.css">
 
-    <title>Group 7 Client Page</title>
-    <link rel="stylesheet" href="./styles.css">
 
+	<!--- Script Source Files -->
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="bootstrap-4.1.3-dist/js/bootstrap.min.js"></script>
+	<script src="https://use.fontawesome.com/releases/v5.5.0/js/all.js"></script>
+	<!--- End of Script Source Files -->
 </head>
 
 <body class="background">
-	<div id="page">
-		<header>
-			<h1 id="cop-name">
-				<span>
-					<a href="index.html" rel="home">Client company name</a>
-				</span>
-			</h1>
-			<h2 id="cop-description">
-				one sentence description
-			</h2>
-		</header>
 
-		<a href="index.html">
-			<img src="img/banner.png" width="1250" height="360" alt="banner">
-		</a>
-		<nav id="nav-bar">
-			<dev class="menu">
-				<ul class="home-list">
-					<li class="nv"><a href="index.html">Home</a></li>
-					<li class="nv"><a href="team.html">Team</a></li>
-					<li class="nv"><a href="RFP.html">Request For Proposal</a></li>
-					<li class="nv"><a class="active" href="contact.html">Contact</a></li>
-				</ul>
-			</dev>
-		</nav>
 
+	<!--Home page-->
+
+	<!--Navbar -->
+	<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+		<a href="#" class="navbar-brand">University of Victoria</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarResponsive">
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item">
+					<a class="nav-link" href="index.html">Home</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="team.html">Team</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="RFP.html">Request for Proposal</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="contact.html">Contact</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+
+	<!--Landing page--->
+	<div id="home" class="offset">
+		<div class="landing-image">
+			<img src="img/banner.png" width=100% height="100%">
+		</div>
+	</div>
+	<div class="caption text-left">
+		<h3>University of Victoria</h3>
+	</div>
+
+	<div class="section">
+		<div class="narrow">
+			<div class="col-12">
+				<h3 class="heading">Contact Form</h3>
+				<div class="heading-underline"></div>
+			</div>
+
+			<div class="body-text">
+				<form class="form-horizontal" action="#">
+					<div class="form-group">
+						<div class="col-sm-4">
+							<label for="email">Email:</label>
+							<input type="email" class="form-control" id="email" placeholder="Enter email">
+						</div>
+					</div>
+					<div class="form-group">
+						<div class="col-sm-4">
+							<label for="name">Name:</label>
+							<input type="name" class="form-control" id="name" placeholder="Enter name">
+						</div>
+					</div>
+
+					<div class="form-group">
+						<div class="col-sm-4">
+							<label for="message">Message:</label>
+							<textarea type="message" class="form-control" id="message" rows="5"
+								placeholder="Enter message"></textarea>
+						</div>
+					</div>
+
+					<div class="form-group">
+						<div class="col-sm-offset-2 col-sm-10">
+							<button type="submit" class="btn btn-default">Submit</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
 	</div>
 
 </body>
+
+</html>
