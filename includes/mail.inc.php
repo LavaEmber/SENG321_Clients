@@ -6,7 +6,7 @@ if(isset($_POST['submit'])){
 	$message = $_POST['message'];
 
 	$subject="contact form received";
-	$mailTo='xxyhcmxf@gmail.com';
+	$mailTo='grahamjsela@gmail.com';
 	$headers="From: ".$mailFrom;
 	$txt = "You have received contact request from ".$name.".\n\nThe E-mail is ".$mailFrom."\n\n".$message;
 
