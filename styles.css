@@ -99,3 +99,11 @@ h3.heading{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: white;    
 }
+
+.body-text{
+    size: 3rem;
+    margin-left: 1rem;
+    padding-top: 1.5rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: white;    
+}
