@@ -63,30 +63,30 @@
 			</div>
 		
 
-			<form class="form-horizontal" action="#">
+			<form class="form-horizontal" action="includes/mail.inc.php" method="post">
 				<div class="form-group">
 					<div class="col-sm-4">
 		    			<label for="email">Email:</label>
-		      			<input type="email" class="form-control" id="email" placeholder="Enter email">
+		      			<input type="email" class="form-control" id="email" name="email" placeholder="Enter email">
 		    		</div>
 	    		</div>
 	    		<div class="form-group">
 					<div class="col-sm-4">
 		    			<label for="name">Name:</label>
-		      			<input type="name" class="form-control" id="name" placeholder="Enter name">
+		      			<input type="name" class="form-control" id="name" name="name" placeholder="Enter name">
 		    		</div>
 	    		</div>
 
 	    		<div class="form-group">
 	    			<div class="col-sm-4">
 		    			<label for="message">Message:</label>
-		      			<textarea type="message" class="form-control" id="message" rows="5" placeholder="Enter message"></textarea>
+		      			<textarea type="message" class="form-control" id="message" name="message" rows="5" placeholder="Enter message"></textarea>
 		    		</div>
 	    		</div>
 
 	    		<div class="form-group">
 	    			<div class="col-sm-offset-2 col-sm-10">
-	      				<button type="submit" class="btn btn-default">Submit</button>
+	      				<button type="submit" class="btn btn-default" id="submit" name="submit">Submit</button>
 	    			</div>
 	  			</div>
 	  		</form>
